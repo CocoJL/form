@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="img-container">
+          <img src="/assets/images/Layout.jpg" alt="" />
+        </div>
+
+        <div class="form-container">
+          <div class="hello">
+            <h1>Welcome!</h1>
+          </div>
+          <form action="#" id="submit" novalidate>
+            <div class="input">
+              <div>
+                <input
+                  type="text"
+                  class="name"
+                  id="first_name"
+                  placeholder="First Name"
+                  required
+                />
+                <p id="firstName-error"></p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="last_name"
+                  class="name"
+                  placeholder="Last Name"
+                  required
+                />
+
+                <p id="lastName-error"></p>
+              </div>
+            </div>
+
+            <div class="input">
+              <div>
+                <input type="email" id="email" placeholder="Email" required />
+                <p id="email-error"></p>
+              </div>
+              <div>
+                <input type="tel" id="phone" placeholder="Phone Number" "
+                required />
+                <p id="phone-error"></p>
+              </div>
+            </div>
+            <div class="input">
+              <div>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+                <p id="password-error"></p>
+              </div>
+
+              <input
+                type="password"
+                id="confirm_password"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </form>
+          <div class="create-button">
+            <button type="submit" form="submit">Create Account</button>
+          </div>
+
+          <div class="login-button">
+            <p>Already have an account?</p>
+            <button>Log in</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
